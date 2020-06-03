@@ -1,0 +1,16 @@
+http://dnd5eapi.co/api/equipment/bedroll
+
+<tr>
+                        <td>Damage</td>
+                        <td>{item.damage.damage_dice}</td>
+                      </tr>
+                      <tr>
+                        <td>Damage type</td>
+                        <td>{item.damage.damage_type.name}</td>
+                      </tr>
+                      <tr>
+                        <td>Range</td>
+                        <td>{item.range.normal}</td>
+                      </tr>
+
+isWeapon && 

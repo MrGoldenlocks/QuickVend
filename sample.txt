@@ -1,0 +1,24 @@
+return (
+    <div>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input
+          name="itemName"
+          ref={register({
+            //required: "Required",
+            pattern: {
+              value: /^[A-Z0-9]{1,10}$/i,
+              message: "invalid item name",
+            },
+          })}
+        />
+        {errors.itemName && errors.itemName.message}
+
+        <button type="submit">Submit</button>
+      </form>
+      <div>
+        {arr.map((item) => (
+          <p key={item.itemName}>{item.itemName}</p>
+        ))}
+      </div>
+    </div>
+  );
